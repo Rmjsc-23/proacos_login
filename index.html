@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<header>
+    <div class="logo">
+        <img src="Imagens/logo-removebg-preview.png" alt="logo" height="">
+    </div>
+</header>
+<body>
+    <section class="pesquisa">
+        <div class="titulo">
+            <h2>RELATÓRIO DE VENDAS</h2>
+        </div>
+        <div class="formulario">
+         <label id="date" for="start_date">De:</label>
+         <input type="date" id="start_date" name="start_date" required>
+         <label id="enddate" for="end_date">Para:</label>
+         <input type="date" id="end_date" name="end_date" required>
+         <button id="btn" type="submit">CONSULTAR</button>
+        </div>
+
+          <table id="myTable">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>ITEM</th>
+                <th>QUANT.</th>
+                <th>DATA LOTE</th>
+                <th>DATA VENDA</th>
+              </tr>
+            </thead>
+            <tbody id="bodytabela">
+            </tbody>
+          </table>
+    <script src="script.js"></script>
+</body>
+</html>
